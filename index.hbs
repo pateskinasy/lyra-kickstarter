@@ -38,6 +38,14 @@ into the {body} of the default.hbs template --}}
 
 {{> site-header}}
 
+{{!-- adding the below to add a tag with my details to the bottom right of page  --}}
+<a href="https://twitter.com/celue" id="tagbylink" target="_blank">
+    <div id="tagby">
+        <img src="https://ik.imagekit.io/214u6evjbiyb9/image1__1__HJ1gMcnXV.jpeg" id="tagbyimg">
+        by Pat
+    </div>
+</a>
+
 {{!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs --}}
 {{#contentFor "scripts"}}
 <script>
